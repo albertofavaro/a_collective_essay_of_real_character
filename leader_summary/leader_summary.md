@@ -19,9 +19,9 @@ V8: 13.4.114.21-electron.0
 OS: Darwin arm64 24.5.0
 
 **Voice Recording Hardware**
-
+Jabra Speak 710
 **Voice Recording Software**
-
+TO DO
 
 ## Methodology
 * Group leaders have 5 minutes to summarise the conversations that took place within their group.
