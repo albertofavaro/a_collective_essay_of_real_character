@@ -20,8 +20,27 @@ OS: Darwin arm64 24.5.0
 
 **Voice Recording Hardware**
 Jabra Speak 710
+
 **Voice Recording Software**
 Voice Memos, Version 3.1 (1274), MacOS
+
+## Leader Technology Footprint
+
+### Group 1
+* **Hardware**: TO DO
+* **Software**: TO DO
+
+### Group 2
+* **Hardware**: TO DO
+* **Software**: TO DO
+
+### Group 3
+* **Hardware**: TO DO
+* **Software**: TO DO
+
+### Group 4
+* **Hardware**: TO DO
+* **Software**: TO DO
 
 ## Methodology
 * Group leaders have 5 minutes to summarise the conversations that took place within their group.
