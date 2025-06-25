@@ -21,7 +21,7 @@ OS: Darwin arm64 24.5.0
 **Voice Recording Hardware**
 Jabra Speak 710
 **Voice Recording Software**
-TO DO
+Voice Memos, Version 3.1 (1274), MacOS
 
 ## Methodology
 * Group leaders have 5 minutes to summarise the conversations that took place within their group.
