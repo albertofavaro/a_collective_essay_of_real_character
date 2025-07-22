@@ -46,6 +46,9 @@ Voice Memos, Version 3.1 (1274), MacOS
 * **Hardware**: MacBook Air, M2, 2022. OS: Sequoia 15.5
 * **Software**: Google Docs, Version Unknown
 
+### Communications between Alberto Favaro and Group Leaders
+Slack, Version 4.44.65 2894b927ef1d68ad8c23841b14166669c5523715@1753078353 (Production)
+
 ## Methodology
 * Group leaders have 5 minutes to summarise the conversations that took place within their group.
 * Summaries are voice recorded with the hardware and software detailed above.
