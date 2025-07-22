@@ -27,20 +27,24 @@ Voice Memos, Version 3.1 (1274), MacOS
 ## Leader Technology Footprint
 
 ### Group 1
-* **Hardware**: TO DO
-* **Software**: TO DO
+* **Group Leader**: Ben Walker
+* **Hardware**: MacBook Air 13-inch, M3, 2024. OS: Sequoia 15.5
+* **Software**: Microsoft OneNote, Version 16.99
 
 ### Group 2
-* **Hardware**: TO DO
-* **Software**: TO DO
+* **Group Leader**: Chris Monit
+* **Hardware**: MacBook Air, M2, 2022. OS: Sequoia 15.5
+* **Software**: Microsoft Word, Version Unknown
 
 ### Group 3
+* **Group Leader**: Jaisal Kapoor
 * **Hardware**: TO DO
 * **Software**: TO DO
 
 ### Group 4
-* **Hardware**: TO DO
-* **Software**: TO DO
+* **Group Leader**: Lara Akala
+* **Hardware**: MacBook Air, M2, 2022. OS: Sequoia 15.5
+* **Software**: Google Docs, Version Unknown
 
 ## Methodology
 * Group leaders have 5 minutes to summarise the conversations that took place within their group.
