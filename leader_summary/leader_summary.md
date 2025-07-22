@@ -38,8 +38,8 @@ Voice Memos, Version 3.1 (1274), MacOS
 
 ### Group 3
 * **Group Leader**: Jaisal Kapoor
-* **Hardware**: TO DO
-* **Software**: TO DO
+* **Hardware**: MacBook Pro, M2, 2022. OS: Sequoia 15.5
+* **Software**: Note taking: Google Docs, Version Unknown. Note summarisation and cleaning: Google Gemini, 2.5 Flash
 
 ### Group 4
 * **Group Leader**: Lara Akala
