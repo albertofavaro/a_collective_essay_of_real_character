@@ -7,6 +7,12 @@ This is an automated transcript of the summary presented by a Group Leader to th
 * **Group Leader**: Jaisal Kapoor
 * **Group Composition**: Oscar Bennett, Spyros Georgakopoulos, Jaisal Kapoor, Arnaud Leredde
 
+## Questions (Topic B): Are we developing AI, or is it developing us?
+* Do large language models change how humans think?
+* What does it mean for an individual to know something, and are large language models changing this?
+* How important is the fact that large language models produce incorrect outputs in relation to our ability to learn from them?
+* What long term impact on education, and thus on society, may large language models have?
+
 ## Full Trascript
 The question that we looked at was, are we developing AI or is it developing us? So we first began by talking about the purpose of developing AI. So we initially we built these tools to kind of make our lives easier to free up our time and allow us to focus on the things that bring us value and meaning.
 
