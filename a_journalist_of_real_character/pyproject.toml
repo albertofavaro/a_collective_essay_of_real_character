@@ -1,0 +1,17 @@
+[project]
+name = "a-journalist-of-real-character"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "albertofavaro", email = "alberto.f@faculty.ai" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+a-journalist-of-real-character = "a_journalist_of_real_character:main"
+
+[build-system]
+requires = ["uv_build>=0.8.12,<0.9.0"]
+build-backend = "uv_build"
