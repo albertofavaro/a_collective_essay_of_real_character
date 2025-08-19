@@ -1,0 +1,1 @@
+Python package and scripts to run the `Journalist of Real Character` by calling an `OpenAI` Large Language Model (LLM) through the corresponding API.

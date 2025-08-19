@@ -1,7 +1,7 @@
 [project]
 name = "a-journalist-of-real-character"
 version = "0.1.0"
-description = "Add your description here"
+description = "Python package and scripts to run the `Journalist of Real Character` by calling an `OpenAI` Large Language Model (LLM) through the corresponding API."
 readme = "README.md"
 authors = [
     { name = "albertofavaro", email = "alberto.f@faculty.ai" }
