@@ -7,7 +7,9 @@ authors = [
     { name = "albertofavaro", email = "alberto.f@faculty.ai" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "openai>=1.100.1",
+]
 
 [project.scripts]
 a-journalist-of-real-character = "a_journalist_of_real_character:main"
