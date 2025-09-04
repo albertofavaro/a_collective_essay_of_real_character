@@ -13,20 +13,32 @@ generate the essay.
 * Generate the essay by using an OpenAI LLM via the corresponding API.
 """
 
-from openai import OpenAI
+# from openai import OpenAI
+from read_parse_write import read_and_parse_sources
+
+CONFIG = {
+    "sources": [
+        {
+            "filepath": "../../../README.md",
+            "keyword": "Methodology",
+            "stop_early": 2,
+        },
+    ]
+}
 
 
 def main():
-    client = OpenAI()
+    sources = read_and_parse_sources(CONFIG)
+    print(sources)
 
-    result = client.responses.create(
-        model="gpt-5",
-        input="Write a haiku about code.",
-        reasoning={"effort": "low"},
-        text={"verbosity": "low"},
-    )
-
-    print(result.output_text)
+    # client = OpenAI()
+    # result = client.responses.create(
+    #    model="gpt-5",
+    #    input="Write a haiku about code.",
+    #    reasoning={"effort": "low"},
+    #    text={"verbosity": "low"},
+    # )
+    # print(result.output_text)
 
 
 if __name__ == "__main__":
