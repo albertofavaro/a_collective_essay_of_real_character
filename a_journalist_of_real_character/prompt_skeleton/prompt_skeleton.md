@@ -27,5 +27,17 @@ Experts from Faculty, a London-based company specialised in AI, gathered for the
 You attended the away day, and are going to write an article that offers business readers an insider view on how experts that work on AI every day describe this technology in 2025, when allowed to consider the matter in a relaxed setting, free of most business constraints.
 
 # Sources
+You are going to base your article on the following sources.
+
+## Methodology sources
+These sources describe the methodology used by the Faculty team in order to run their away day. The contents of the methodology sources are found below.
+
+{methodology_str}
+
+## Transcript sources
+These sources are the transcripts of the presentations delivered by the group leaders to report on what was discussed within their groups. The contents of the transcript sources are found below.
+
+{transcript_str}
 
 # Final instructions and prompt to think step by step
+Review your article iteratively to ensure it is streamlined, gramatically correct, and complies with the above guidelines.
