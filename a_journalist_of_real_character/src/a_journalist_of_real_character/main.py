@@ -13,20 +13,43 @@ generate the essay.
 * Generate the essay by using an OpenAI LLM via the corresponding API.
 """
 
-from openai import OpenAI
+# from openai import OpenAI
+from read_parse_write import read_and_parse_methodology_sources
+
+CONFIG = {
+    "methodology_sources": [
+        {
+            "filepath": "../../../README.md",
+            "keyword": "Methodology",
+            "stop_early": 2,
+        },
+        {
+            "filepath": "../../../question_sheet/group_1_2.md",
+            "keyword": "Instructions",
+            "stop_early": 1,
+        },
+        {
+            "filepath": "../../../leader_summary/leader_summary.md",
+            "keyword": "Methodology",
+            "stop_early": None,
+        },
+    ]
+}
 
 
 def main():
-    client = OpenAI()
+    sources = read_and_parse_methodology_sources(CONFIG)
+    print(sources)
+    print(len(sources))
 
-    result = client.responses.create(
-        model="gpt-5",
-        input="Write a haiku about code.",
-        reasoning={"effort": "low"},
-        text={"verbosity": "low"},
-    )
-
-    print(result.output_text)
+    # client = OpenAI()
+    # result = client.responses.create(
+    #    model="gpt-5",
+    #    input="Write a haiku about code.",
+    #    reasoning={"effort": "low"},
+    #    text={"verbosity": "low"},
+    # )
+    # print(result.output_text)
 
 
 if __name__ == "__main__":
