@@ -14,22 +14,33 @@ generate the essay.
 """
 
 # from openai import OpenAI
-from read_parse_write import read_and_parse_sources
+from read_parse_write import read_and_parse_methodology_sources
 
 CONFIG = {
-    "sources": [
+    "methodology_sources": [
         {
             "filepath": "../../../README.md",
             "keyword": "Methodology",
             "stop_early": 2,
+        },
+        {
+            "filepath": "../../../question_sheet/group_1_2.md",
+            "keyword": "Instructions",
+            "stop_early": 1,
+        },
+        {
+            "filepath": "../../../leader_summary/leader_summary.md",
+            "keyword": "Methodology",
+            "stop_early": None,
         },
     ]
 }
 
 
 def main():
-    sources = read_and_parse_sources(CONFIG)
+    sources = read_and_parse_methodology_sources(CONFIG)
     print(sources)
+    print(len(sources))
 
     # client = OpenAI()
     # result = client.responses.create(

@@ -66,9 +66,20 @@ def get_h2_and_bullets(soup, keyword, stop_early=None):
     return h2, bullets
 
 
-def read_and_parse_sources(config_dict):
+def read_and_parse_methodology_sources(config_dict):
+    """
+    Read and parse the Markdown sources detailed in the configuration
+    dictionary, which explain the methodology followed on the away day.
+
+    Args:
+        config_dict: Dictionary configuring the Journalist.
+
+    Returns:
+        sources: List of dictionaries containing parsed information
+        from the methodology sources.
+    """
     sources = []
-    for source in config_dict["sources"]:
+    for source in config_dict["methodology_sources"]:
         soup = read_and_soupify(source["filepath"])
         h2, bullets = get_h2_and_bullets(
             soup, source["keyword"], stop_early=source["stop_early"]
