@@ -42,6 +42,7 @@ These sources describe the methodology used by the Faculty team in order to run 
 These sources are the transcripts of the presentations delivered by the group leaders to report on what was discussed within their groups. The contents of the transcript sources are:
 1. Found below (within a block delimited by triple backticks).
 2. Formatted in Markdown.
+3. The result of speech-to-text transcription, so you will need to correct e.g. spelling mistakes.
 
 ```
 {transcript_str}
