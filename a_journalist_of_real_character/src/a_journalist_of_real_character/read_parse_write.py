@@ -88,3 +88,28 @@ def read_and_parse_methodology_sources(config_dict):
         source["bullets"] = [x.text for x in bullets]
         sources.append(source)
     return sources
+
+
+def read_and_parse_transcript_sources(directory_path):
+    """
+    Read the transcript sources contained in the
+    appropriate directory, and parse them.
+
+    Args:
+        directory_path: Path of the directory containing
+        the transcript sources.
+    
+    Returns:
+        transcript_sources: List of parsed transcript sources,
+        where each source is a string (encoded in Markdown).
+    """
+    paths = Path(directory_path).iterdir()
+    paths = [
+        x for x in paths if "group" in x.name.lower()
+    ]
+    transcript_sources = []
+    for path in paths:
+        with open(path, "r") as f:
+            source = path.name + "  " + f.read() + "  "
+        transcript_sources.append(source)
+    return transcript_sources

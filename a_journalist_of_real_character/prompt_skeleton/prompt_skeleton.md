@@ -30,14 +30,22 @@ You attended the away day, and are going to write an article that offers busines
 You are going to base your article on the following sources.
 
 ## Methodology sources
-These sources describe the methodology used by the Faculty team in order to run their away day. The contents of the methodology sources are found below.
+These sources describe the methodology used by the Faculty team in order to run their away day. The contents of the methodology sources are:
+1. Found below (within a block delimited by triple backticks).
+2. Formatted in JSON.
 
+```json
 {methodology_str}
+```
 
 ## Transcript sources
-These sources are the transcripts of the presentations delivered by the group leaders to report on what was discussed within their groups. The contents of the transcript sources are found below.
+These sources are the transcripts of the presentations delivered by the group leaders to report on what was discussed within their groups. The contents of the transcript sources are:
+1. Found below (within a block delimited by triple backticks).
+2. Formatted in Markdown.
 
+```
 {transcript_str}
+```
 
 # Final instructions and prompt to think step by step
 Review your article iteratively to ensure it is streamlined, gramatically correct, and complies with the above guidelines.

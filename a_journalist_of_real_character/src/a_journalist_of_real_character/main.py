@@ -15,6 +15,8 @@ generate the essay.
 
 # from openai import OpenAI
 from read_parse_write import read_and_parse_methodology_sources
+from read_parse_write import read_and_parse_transcript_sources
+from engineer_prompt import assemble_prompt
 
 CONFIG = {
     "methodology_sources": [
@@ -33,15 +35,28 @@ CONFIG = {
             "keyword": "Methodology",
             "stop_early": None,
         },
-    ]
+    ],
+    "transcript_sources_directory_path": "../../../transcript",
+    "prompt_skeleton_filepath": "../../prompt_skeleton/prompt_skeleton.md",
 }
 
 
 def main():
-    sources = read_and_parse_methodology_sources(CONFIG)
-    print(sources)
-    print(len(sources))
+    methodology_sources = read_and_parse_methodology_sources(CONFIG)
+    transcript_sources = read_and_parse_transcript_sources(
+        CONFIG["transcript_sources_directory_path"]
+    )
 
+    with open(CONFIG["prompt_skeleton_filepath"], "r") as f:
+        prompt_skeleton_str = f.read()
+    
+    prompt_str = assemble_prompt(
+        prompt_skeleton_str,
+        methodology_sources,
+        transcript_sources
+    )
+
+    print(prompt_str)
     # client = OpenAI()
     # result = client.responses.create(
     #    model="gpt-5",
