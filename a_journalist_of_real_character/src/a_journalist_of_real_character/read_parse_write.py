@@ -97,15 +97,13 @@ def read_and_parse_transcript_sources(directory_path):
     Args:
         directory_path: Path of the directory containing
         the transcript sources.
-    
+
     Returns:
         transcript_sources: List of parsed transcript sources,
         where each source is a string (encoded in Markdown).
     """
     paths = Path(directory_path).iterdir()
-    paths = [
-        x for x in paths if "group" in x.name.lower()
-    ]
+    paths = [x for x in paths if "group" in x.name.lower()]
     transcript_sources = []
     for path in paths:
         with open(path, "r") as f:

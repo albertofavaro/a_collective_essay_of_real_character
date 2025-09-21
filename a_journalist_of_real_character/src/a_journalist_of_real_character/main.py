@@ -13,7 +13,7 @@ generate the essay.
 * Generate the essay by using an OpenAI LLM via the corresponding API.
 """
 
-# from openai import OpenAI
+from openai import OpenAI
 from read_parse_write import read_and_parse_methodology_sources
 from read_parse_write import read_and_parse_transcript_sources
 from engineer_prompt import assemble_prompt
@@ -38,6 +38,9 @@ CONFIG = {
     ],
     "transcript_sources_directory_path": "../../../transcript",
     "prompt_skeleton_filepath": "../../prompt_skeleton/prompt_skeleton.md",
+    "model": "gpt-5-2025-08-07",
+    "reasoning": {"effort": "low"},
+    "text": {"verbosity": "medium"},
 }
 
 
@@ -49,22 +52,19 @@ def main():
 
     with open(CONFIG["prompt_skeleton_filepath"], "r") as f:
         prompt_skeleton_str = f.read()
-    
+
     prompt_str = assemble_prompt(
-        prompt_skeleton_str,
-        methodology_sources,
-        transcript_sources
+        prompt_skeleton_str, methodology_sources, transcript_sources
     )
 
-    print(prompt_str)
-    # client = OpenAI()
-    # result = client.responses.create(
-    #    model="gpt-5",
-    #    input="Write a haiku about code.",
-    #    reasoning={"effort": "low"},
-    #    text={"verbosity": "low"},
-    # )
-    # print(result.output_text)
+    client = OpenAI()
+    result = client.responses.create(
+        model=CONFIG["model"],
+        input=prompt_str,
+        reasoning=CONFIG["reasoning"],
+        text=CONFIG["text"],
+    )
+    print(result.output_text)
 
 
 if __name__ == "__main__":
