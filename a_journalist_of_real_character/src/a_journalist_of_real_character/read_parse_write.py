@@ -39,7 +39,6 @@ def find_h2_by_keyword(soup, keyword):
     """
     for h2 in soup.find_all("h2"):
         if keyword.lower() in h2.text.lower():
-            print(type(h2))
             return h2
 
 
